@@ -1,0 +1,13 @@
+[user]
+	name = Cédric Schieli
+	email = cschieli@gmail.com
+[sendemail]
+	from = Cédric Schieli <cschieli@gmail.com>
+	cc = Cédric Schieli <cschieli@gmail.com>
+	envelopeSender = auto
+[push]
+	default = simple
+[format]
+	signOff = true
+[color]
+	ui = auto
