@@ -1,0 +1,4 @@
+for bcfile in ~/.bash_completion.d/*.inc ; do
+	[[ $bcfile =~ \* ]] && continue
+	. $bcfile
+done
