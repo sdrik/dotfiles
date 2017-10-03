@@ -16,3 +16,5 @@ fi
 
 
 # Put your fun stuff here.
+
+alias dot='git --git-dir=$HOME/.mycfg --work-tree=$HOME'
