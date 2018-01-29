@@ -11,3 +11,5 @@
 	signOff = true
 [color]
 	ui = auto
+[commit]
+	gpgsign = true

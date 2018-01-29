@@ -22,6 +22,8 @@ HISTFILESIZE=2000
 
 # Put your fun stuff here.
 
+export GPG_TTY="$(tty)"
+
 alias dot='git --git-dir=$HOME/.mycfg --work-tree=$HOME'
 
 function newg {
