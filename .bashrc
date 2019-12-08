@@ -14,7 +14,7 @@ HISTFILESIZE=2000
 
 export GPG_TTY="$(tty)"
 
-alias dot='git --git-dir=$HOME/.mycfg --work-tree=$HOME'
+alias dot='git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME'
 
 function newg {
 	echo ",$(getent group "$1" | cut -d: -f4)," | grep -q ",${USER}," || { echo "Invalid group: $1" >&2; return 1; }
