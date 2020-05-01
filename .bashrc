@@ -20,3 +20,10 @@ function newg {
 	echo ",$(getent group "$1" | cut -d: -f4)," | grep -q ",${USER}," || { echo "Invalid group: $1" >&2; return 1; }
 	exec sg "$1" newgrp `id -gn`
 }
+
+if [ -f `which powerline-daemon` ]; then
+	powerline-daemon -q
+	POWERLINE_BASH_CONTINUATION=1
+	POWERLINE_BASH_SELECT=1
+	. /usr/share/powerline/bindings/bash/powerline.sh
+fi
