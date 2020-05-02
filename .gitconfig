@@ -13,3 +13,5 @@
 	ui = auto
 [commit]
 	gpgsign = true
+[merge]
+	tool = meld
