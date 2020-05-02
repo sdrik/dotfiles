@@ -1,9 +1,12 @@
-source $VIMRUNTIME/defaults.vim
-
-if exists('pathogen#inject')
-  execute pathogen#infect()
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-let g:powerline_pycmd="py3"
-:set laststatus=2
 
-set mouse=
+call plug#begin('~/.vim/plugged')
+Plug 'editorconfig/editorconfig-vim'
+Plug 'majutsushi/tagbar'
+call plug#end()
+
+:set laststatus=2
