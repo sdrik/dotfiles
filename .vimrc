@@ -6,7 +6,11 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'editorconfig/editorconfig-vim'
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'majutsushi/tagbar'
 call plug#end()
 
 :set laststatus=2
+
+nmap <F8> :TagbarToggle<CR>
+let g:typescript_use_builtin_tagbar_defs=0
