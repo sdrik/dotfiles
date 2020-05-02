@@ -5,3 +5,13 @@
 /.ssh/id_rsa*
 /.ssh/known_hosts
 /.viminfo
+
+# xdg-user-dirs
+/Bureau
+/Téléchargements
+/Modèles
+/Public
+/Documents
+/Musique
+/Images
+/Vidéos
