@@ -21,6 +21,8 @@
 /.mysql_history
 /.node_repl_history
 /.python_history
+/.sqlite_history
+/.ts_node_repl_history
 
 # Various apps
 /.AndroidStudio*
@@ -39,6 +41,7 @@
 /.java
 /.macromedia
 /.microsoft
+/.mitmproxy
 /.mono
 /.mozilla
 /.npm
@@ -48,6 +51,7 @@
 /.ssh
 /.swt
 /.templateengine
+/.tox
 /.travis
 /.vim
 /.vscode-oss
