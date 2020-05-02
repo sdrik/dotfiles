@@ -15,6 +15,10 @@ HISTFILESIZE=2000
 export GPG_TTY="$(tty)"
 
 alias dot='git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME'
+if [ -f "/usr/share/bash-completion/completions/git" ]; then
+	source /usr/share/bash-completion/completions/git
+	__git_complete dot _git
+fi
 
 function newg {
 	echo ",$(getent group "$1" | cut -d: -f4)," | grep -q ",${USER}," || { echo "Invalid group: $1" >&2; return 1; }
