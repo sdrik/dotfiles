@@ -1,17 +1,56 @@
-/.Xauthority
-/.bash_history
-/.cache
-/.lesshst
-/.ssh/id_rsa*
-/.ssh/known_hosts
-/.viminfo
+# Ignore non-dotfiles
+/[^.]*
+!/README.md
 
-# xdg-user-dirs
-/Bureau
-/Téléchargements
-/Modèles
-/Public
-/Documents
-/Musique
-/Images
-/Vidéos
+# Ignore standard cache and config locations
+/.cache
+/.config/*
+/.local
+
+# Cookies
+/.ICEauthority
+/.Xauthority
+/.emulator_console_auth_token
+/.esd_auth
+/.viminfo
+/.wget-hsts
+
+# History files
+/.bash_history
+/.lesshst
+/.mysql_history
+/.node_repl_history
+/.python_history
+
+# Various apps
+/.AndroidStudio*
+/.android
+/.aspnet
+/.azure
+/.circleci
+/.cmake
+/.cups
+/.dotnet
+/.eclipse
+/.gnupg
+/.gradle
+/.gtk-bookmarks
+/.hplip
+/.java
+/.macromedia
+/.microsoft
+/.mono
+/.mozilla
+/.npm
+/.nuget
+/.nvm
+/.pki
+/.ssh
+/.swt
+/.templateengine
+/.travis
+/.vim
+/.vscode-oss
+
+# Allow tracking of powerline configuration
+!/.config/powerline
