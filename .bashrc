@@ -31,3 +31,5 @@ if [ -f `which powerline-daemon` ]; then
 	POWERLINE_BASH_SELECT=1
 	. /usr/share/powerline/bindings/bash/powerline.sh
 fi
+
+[ -f "$HOME"/.local/bashrc ] && . "$HOME"/.local/bashrc
