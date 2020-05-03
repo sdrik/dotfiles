@@ -12,6 +12,7 @@ HISTCONTROL=ignoreboth
 HISTSIZE=1000
 HISTFILESIZE=2000
 
+export EDITOR="vim"
 export GPG_TTY="$(tty)"
 
 alias dot='git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME'
