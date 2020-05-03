@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'editorconfig/editorconfig-vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'majutsushi/tagbar'
+Plug 'kevinoid/vim-jsonc'
 call plug#end()
 
 :set laststatus=2
